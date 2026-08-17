@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Salon — Where Beauty Blossoms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Quicksand:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Cursor Sparkle -->
+    <div class="sparkle-container" id="sparkleContainer"></div>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="preloader-inner">
+            <div class="flower-loader">
+                <div class="petal p1"></div>
+                <div class="petal p2"></div>
+                <div class="petal p3"></div>
+                <div class="petal p4"></div>
+                <div class="petal p5"></div>
+                <div class="petal p6"></div>
+                <div class="center-dot"></div>
+            </div>
+            <p class="preloader-text">Bloom Salon</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">✿</span>
+                <span class="logo-text">Bloom</span>
+                <span class="logo-sub">salon</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#booking" class="nav-cta">Book Now ✿</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+            <div class="floating-shape shape-3"></div>
+            <div class="floating-shape shape-4"></div>
+            <div class="floating-shape shape-5"></div>
+            <div class="floating-shape shape-6"></div>
+        </div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-star">★</span> #1 Premium Salon Experience <span class="badge-star">★</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-line line-1">Where Beauty</span>
+                <span class="title-line line-2 script">Blossoms</span>
+                <span class="title-line line-3">into Art</span>
+            </h1>
+            <p class="hero-description">
+                Indulge in a world of elegance and sophistication. Our expert stylists transform your vision 
+                into stunning reality with passion, precision, and a touch of magic.
+            </p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn btn-primary">
+                    <span>Book Appointment</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+                <a href="#services" class="btn btn-secondary">
+                    <span>Explore Services</span>
+                    <i class="fas fa-spa"></i>
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="15000">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Expert Stylists</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="12">0</span><span class="stat-suffix"></span>
+                    <span class="stat-label">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-3d-card" id="hero3dCard">
+            <div class="card-3d-inner">
+                <div class="card-face card-front">
+                    <div class="hero-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=600&h=800&fit=crop" alt="Salon Interior" class="hero-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="card-back-content">
+                        <span class="card-back-icon">✿</span>
+                        <h3>Bloom Salon</h3>
+                        <p>Transforming beauty since 2014</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="mouse-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Story</span>
+                <h2 class="section-title">Welcome to <span class="script">Bloom</span></h2>
+                <div class="section-divider"><span>✿</span></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-images" data-aos="fade-right">
+                    <div class="about-img-3d">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500&h=600&fit=crop" alt="Salon Experience" class="about-img about-img-1">
+                        <div class="img-decoration deco-1"></div>
+                    </div>
+                    <div class="about-img-3d about-img-offset">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=500&h=400&fit=crop" alt="Hair Styling" class="about-img about-img-2">
+                        <div class="img-decoration deco-2"></div>
+                    </div>
+                    <div class="experience-badge">
+                        <span class="exp-number">12+</span>
+                        <span class="exp-text">Years of<br>Excellence</span>
+                    </div>
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h3>A Legacy of <span class="script">Elegance</span> & Beauty</h3>
+                    <p class="about-lead">Founded in 2014, Bloom Salon has been the destination of choice for those who appreciate the finer things in beauty and self-care.</p>
+                    <p>Our philosophy is simple: every client deserves a personalized experience that celebrates their unique beauty. We combine time-honored techniques with cutting-edge trends to create looks that are both timeless and modern.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-gem"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Premium Products</h4>
+                                <p>We use only top-tier, eco-friendly products</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Award-Winning</h4>
+                                <p>Recognized as Best Salon 3 years running</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Client-First</h4>
+                                <p>Your satisfaction is our top priority</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-text">
+                                <h4>Eco-Conscious</h4>
+                                <p>Sustainable beauty practices throughout</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our <span class="script">Premium</span> Services</h2>
+                <div class="section-divider"><span>✿</span></div>
+                <p class="section-subtitle">From classic cuts to avant-garde transformations, we deliver excellence in every service</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card-3d" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon-bg"></div>
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <h3>Hair Styling</h3>
+                            <p>Expert cuts, blowouts, and updos tailored to your unique style and personality.</p>
+                            <div class="service-price">From $45</div>
+                            <div class="service-hover-line"></div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Hair Styling</h3>
+                            <ul>
+                                <li>Precision Haircuts</li>
+                                <li>Blow Dry & Styling</li>
+                                <li>Updos & Braids</li>
+                                <li>Kids Styling</li>
+                                <li>Special Occasion</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 2 -->
+                <div class="service-card-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon-bg"></div>
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Color & Highlights</h3>
+                            <p>Vibrant, dimensional color that makes heads turn. From subtle balayage to bold fashion colors.</p>
+                            <div class="service-price">From $85</div>
+                            <div class="service-hover-line"></div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Color & Highlights</h3>
+                            <ul>
+                                <li>Balayage</li>
+                                <li>Full/Partial Highlights</li>
+                                <li>All-Over Color</li>
+                                <li>Fashion Colors</li>
+                                <li>Color Correction</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 3 -->
+                <div class="service-card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon-bg"></div>
+                                <i class="fas fa-spa"></i>
+                            </div>
+                            <h3>Skin & Spa</h3>
+                            <p>Rejuvenating facial treatments and spa services for radiant, glowing skin.</p>
+                            <div class="service-price">From $65</div>
+                            <div class="service-hover-line"></div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Skin & Spa</h3>
+                            <ul>
+                                <li>Deep Cleanse Facial</li>
+                                <li>Anti-Aging Treatment</li>
+                                <li>Hydrating Facial</li>
+                                <li>Microdermabrasion</li>
+                                <li>LED Light Therapy</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 4 -->
+                <div class="service-card-3d" data-aos="fade-up" data-aos-delay="0">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon-bg"></div>
+                                <i class="fas fa-hand-sparkles"></i>
+                            </div>
+                            <h3>Nail Art</h3>
+                            <p>Stunning nail designs from classic French tips to intricate artistic masterpieces.</p>
+                            <div class="service-price">From $35</div>
+                            <div class="service-hover-line"></div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Nail Art</h3>
+                            <ul>
+                                <li>Classic Manicure</li>
+                                <li>Gel Nails</li>
+                                <li>Nail Art & Design</li>
+                                <li>Pedicure</li>
+                                <li>Nail Extensions</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 5 -->
+                <div class="service-card-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon-bg"></div>
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Brows & Lashes</h3>
+                            <p>Perfectly sculpted brows and luscious lashes to frame your beautiful eyes.</p>
+                            <div class="service-price">From $25</div>
+                            <div class="service-hover-line"></div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Brows & Lashes</h3>
+                            <ul>
+                                <li>Eyebrow Shaping</li>
+                                <li>Brow Lamination</li>
+                                <li>Lash Extensions</li>
+                                <li>Lash Lift & Tint</li>
+                                <li>Brow Tinting</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Service 6 -->
+                <div class="service-card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card-inner">
+                        <div class="service-front">
+                            <div class="service-icon-wrapper">
+                                <div class="service-icon-bg"></div>
+                                <i class="fas fa-ring"></i>
+                            </div>
+                            <h3>Bridal Package</h3>
+                            <p>Your dream wedding look, perfected. Complete bridal beauty services for your special day.</p>
+                            <div class="service-price">From $250</div>
+                            <div class="service-hover-line"></div>
+                        </div>
+                        <div class="service-back">
+                            <h3>Bridal Package</h3>
+                            <ul>
+                                <li>Bridal Hair & Makeup</li>
+                                <li>Trial Session</li>
+                                <li>Bridal Party Services</li>
+                                <li>Pre-Wedding Facial</li>
+                                <li>Day-Of Touch-ups</li>
+                            </ul>
+                            <a href="#booking" class="btn btn-small">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Work</span>
+                <h2 class="section-title">Beauty <span class="script">Gallery</span></h2>
+                <div class="section-divider"><span>✿</span></div>
+                <p class="section-subtitle">A glimpse into the magic we create every day</p>
+            </div>
+            <div class="gallery-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="hair">Hair</button>
+                <button class="filter-btn" data-filter="color">Color</button>
+                <button class="filter-btn" data-filter="nails">Nails</button>
+                <button class="filter-btn" data-filter="makeup">Makeup</button>
+                <button class="filter-btn" data-filter="bridal">Bridal</button>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <div class="gallery-item-3d" data-category="hair" data-aos="fade-up">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?w=400&h=500&fit=crop" alt="Hair Styling" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Elegant Waves</h4>
+                                <p>Hair Styling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="color" data-aos="fade-up" data-aos-delay="50">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400&h=600&fit=crop" alt="Hair Color" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Sun-Kissed Balayage</h4>
+                                <p>Hair Color</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="nails" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=400&h=400&fit=crop" alt="Nail Art" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Rose Gold Nails</h4>
+                                <p>Nail Art</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="makeup" data-aos="fade-up" data-aos-delay="150">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=400&h=500&fit=crop" alt="Makeup" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Glam Evening Look</h4>
+                                <p>Makeup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="bridal" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=400&h=600&fit=crop" alt="Bridal" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Royal Bridal</h4>
+                                <p>Bridal</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="hair" data-aos="fade-up" data-aos-delay="250">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&h=400&fit=crop" alt="Hair Treatment" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Sleek & Modern</h4>
+                                <p>Hair Styling</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="color" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=400&h=500&fit=crop" alt="Coloring" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Auburn Highlights</h4>
+                                <p>Hair Color</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gallery-item-3d" data-category="makeup" data-aos="fade-up" data-aos-delay="350">
+                    <div class="gallery-item-inner">
+                        <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=400&h=400&fit=crop" alt="Makeup Art" loading="lazy">
+                        <div class="gallery-overlay">
+                            <div class="gallery-overlay-content">
+                                <i class="fas fa-expand"></i>
+                                <h4>Natural Glow</h4>
+                                <p>Makeup</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team" id="team">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Meet the Artists</span>
+                <h2 class="section-title">Our <span class="script">Talented</span> Team</h2>
+                <div class="section-divider"><span>✿</span></div>
+                <p class="section-subtitle">Passionate professionals dedicated to making you look and feel your absolute best</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card-3d" data-aos="fade-up" data-aos-delay="0">
+                    <div class="team-card-inner">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=500&fit=crop" alt="Sophia Bloom" loading="lazy">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Sophia Bloom</h3>
+                            <span class="team-role">Founder & Creative Director</span>
+                            <p>15+ years of experience in haute couture hairstyling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-card-inner">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=500&fit=crop" alt="Luna Martinez" loading="lazy">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Luna Martinez</h3>
+                            <span class="team-role">Senior Colorist</span>
+                            <p>Color wizard specializing in balayage and vivid tones</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card-inner">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=500&fit=crop" alt="James Chen" loading="lazy">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>James Chen</h3>
+                            <span class="team-role">Master Stylist</span>
+                            <p>Expert in precision cuts and editorial styling</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card-3d" data-aos="fade-up" data-aos-delay="300">
+                    <div class="team-card-inner">
+                        <div class="team-image-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=500&fit=crop" alt="Amara Rose" loading="lazy">
+                            <div class="team-social">
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-pinterest"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Amara Rose</h3>
+                            <span class="team-role">Makeup Artist</span>
+                            <p>Red carpet ready looks for every occasion</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Client Love</span>
+                <h2 class="section-title">What Our <span class="script">Clients</span> Say</h2>
+                <div class="section-divider"><span>✿</span></div>
+            </div>
+            <div class="testimonials-carousel" id="testimonialCarousel">
+                <div class="testimonial-track">
+                    <div class="testimonial-card-3d">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Absolutely magical experience! Sophia understood exactly what I wanted and gave me the most gorgeous balayage. I've never felt more confident. Bloom is my forever salon!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=80&h=80&fit=crop" alt="Client" loading="lazy">
+                                <div>
+                                    <h4>Emma Watson</h4>
+                                    <span>Regular Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-3d">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The bridal package was a dream come true. Every detail was perfect — from the trial to the wedding day. My hair and makeup were flawless and lasted all night!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop" alt="Client" loading="lazy">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Bridal Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-3d">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"I've been to many salons but nothing compares to Bloom. The attention to detail, the luxurious atmosphere, and the incredible skill of their team make every visit special."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop" alt="Client" loading="lazy">
+                                <div>
+                                    <h4>Michael Park</h4>
+                                    <span>VIP Client</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card-3d">
+                        <div class="testimonial-inner">
+                            <div class="testimonial-stars">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The nail art at Bloom is out of this world! Luna created the most intricate floral designs for my wedding nails. Every guest complimented them. Simply stunning!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=80&h=80&fit=crop" alt="Client" loading="lazy">
+                                <div>
+                                    <h4>Priya Sharma</h4>
+                                    <span>Nail Art Enthusiast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" id="carouselPrev"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-dots" id="carouselDots"></div>
+                    <button class="carousel-btn next" id="carouselNext"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Our Packages</span>
+                <h2 class="section-title">Elegant <span class="script">Pricing</span></h2>
+                <div class="section-divider"><span>✿</span></div>
+                <p class="section-subtitle">Transparent pricing with no hidden fees. Choose the perfect package for your needs.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card-3d" data-aos="fade-up" data-aos-delay="0">
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <span class="pricing-icon">✿</span>
+                            <h3>Petal</h3>
+                            <p class="pricing-tagline">Essential Beauty</p>
+                        </div>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="price">49</span>
+                            <span class="period">/session</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Haircut & Style</li>
+                            <li><i class="fas fa-check"></i> Basic Manicure</li>
+                            <li><i class="fas fa-check"></i> Eyebrow Shaping</li>
+                            <li><i class="fas fa-check"></i> Complimentary Refreshments</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Color Services</li>
+                            <li class="disabled"><i class="fas fa-times"></i> Spa Treatments</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline">Select Package</a>
+                    </div>
+                </div>
+                <div class="pricing-card-3d featured" data-aos="fade-up" data-aos-delay="100">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <span class="pricing-icon">❀</span>
+                            <h3>Blossom</h3>
+                            <p class="pricing-tagline">Complete Transformation</p>
+                        </div>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="price">129</span>
+                            <span class="period">/session</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Haircut & Premium Style</li>
+                            <li><i class="fas fa-check"></i> Gel Manicure & Pedicure</li>
+                            <li><i class="fas fa-check"></i> Full Color or Highlights</li>
+                            <li><i class="fas fa-check"></i> Eyebrow & Lash Tint</li>
+                            <li><i class="fas fa-check"></i> Express Facial Treatment</li>
+                            <li><i class="fas fa-check"></i> Complimentary Refreshments</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-primary">Select Package</a>
+                    </div>
+                </div>
+                <div class="pricing-card-3d" data-aos="fade-up" data-aos-delay="200">
+                    <div class="pricing-card-inner">
+                        <div class="pricing-header">
+                            <span class="pricing-icon">✾</span>
+                            <h3>Crown</h3>
+                            <p class="pricing-tagline">Ultimate Luxury</p>
+                        </div>
+                        <div class="pricing-amount">
+                            <span class="currency">$</span>
+                            <span class="price">249</span>
+                            <span class="period">/session</span>
+                        </div>
+                        <ul class="pricing-features">
+                            <li><i class="fas fa-check"></i> Premium Haircut & Styling</li>
+                            <li><i class="fas fa-check"></i> Full Color / Balayage</li>
+                            <li><i class="fas fa-check"></i> Luxury Spa Mani-Pedi</li>
+                            <li><i class="fas fa-check"></i> Full Lash Extensions</li>
+                            <li><i class="fas fa-check"></i> Signature Facial Treatment</li>
+                            <li><i class="fas fa-check"></i> VIP Lounge Access</li>
+                        </ul>
+                        <a href="#booking" class="btn btn-outline">Select Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking" id="booking">
+        <div class="booking-bg-shapes">
+            <div class="floating-shape shape-1"></div>
+            <div class="floating-shape shape-2"></div>
+        </div>
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Make a Reservation</span>
+                <h2 class="section-title">Book Your <span class="script">Appointment</span></h2>
+                <div class="section-divider"><span>✿</span></div>
+                <p class="section-subtitle">Schedule your next beauty session in just a few clicks</p>
+            </div>
+            <div class="booking-wrapper" data-aos="fade-up">
+                <div class="booking-info">
+                    <div class="booking-info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Opening Hours</h4>
+                        <p>Mon - Fri: 9:00 AM - 8:00 PM</p>
+                        <p>Saturday: 9:00 AM - 6:00 PM</p>
+                        <p>Sunday: 10:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="booking-info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p>+1 (555) 123-4567</p>
+                        <p>We're happy to help!</p>
+                    </div>
+                    <div class="booking-info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Visit Us</h4>
+                        <p>123 Blossom Lane</p>
+                        <p>Beverly Hills, CA 90210</p>
+                    </div>
+                </div>
+                <form class="booking-form" id="bookingForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" placeholder="Your first name" required>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" placeholder="Your last name" required>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" placeholder="+1 (555) 000-0000" required>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="service">Service</label>
+                            <select id="service" required>
+                                <option value="">Select a service</option>
+                                <option value="haircut">Haircut & Styling — from $45</option>
+                                <option value="color">Color & Highlights — from $85</option>
+                                <option value="facial">Skin & Spa Facial — from $65</option>
+                                <option value="nails">Nail Art — from $35</option>
+                                <option value="brows">Brows & Lashes — from $25</option>
+                                <option value="bridal">Bridal Package — from $250</option>
+                                <option value="petal">Petal Package — $49</option>
+                                <option value="blossom">Blossom Package — $129</option>
+                                <option value="crown">Crown Package — $249</option>
+                            </select>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="stylist">Preferred Stylist</label>
+                            <select id="stylist">
+                                <option value="">No preference</option>
+                                <option value="sophia">Sophia Bloom</option>
+                                <option value="luna">Luna Martinez</option>
+                                <option value="james">James Chen</option>
+                                <option value="amara">Amara Rose</option>
+                            </select>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="date">Preferred Date</label>
+                            <input type="date" id="date" required>
+                            <div class="input-line"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">Preferred Time</label>
+                            <select id="time" required>
+                                <option value="">Select a time</option>
+                                <option value="09:00">9:00 AM</option>
+                                <option value="09:30">9:30 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="10:30">10:30 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="11:30">11:30 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="12:30">12:30 PM</option>
+                                <option value="13:00">1:00 PM</option>
+                                <option value="13:30">1:30 PM</option>
+                                <option value="14:00">2:00 PM</option>
+                                <option value="14:30">2:30 PM</option>
+                                <option value="15:00">3:00 PM</option>
+                                <option value="15:30">3:30 PM</option>
+                                <option value="16:00">4:00 PM</option>
+                                <option value="16:30">4:30 PM</option>
+                                <option value="17:00">5:00 PM</option>
+                                <option value="17:30">5:30 PM</option>
+                                <option value="18:00">6:00 PM</option>
+                                <option value="18:30">6:30 PM</option>
+                                <option value="19:00">7:00 PM</option>
+                            </select>
+                            <div class="input-line"></div>
+                        </div>
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="notes">Special Requests</label>
+                        <textarea id="notes" rows="3" placeholder="Any special requests or notes for your stylist..."></textarea>
+                        <div class="input-line"></div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-large">
+                        <span>Confirm Booking</span>
+                        <i class="fas fa-check-circle"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Find <span class="script">Us</span></h2>
+                <div class="section-divider"><span>✿</span></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info-cards" data-aos="fade-right">
+                    <div class="contact-card-3d">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Our Location</h4>
+                        <p>123 Blossom Lane<br>Beverly Hills, CA 90210</p>
+                    </div>
+                    <div class="contact-card-3d">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h4>Phone Number</h4>
+                        <p>+1 (555) 123-4567<br>+1 (555) 765-4321</p>
+                    </div>
+                    <div class="contact-card-3d">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Email Address</h4>
+                        <p>hello@bloomsalon.com<br>booking@bloomsalon.com</p>
+                    </div>
+                    <div class="contact-social">
+                        <a href="#" class="social-link-3d"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link-3d"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link-3d"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#" class="social-link-3d"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-link-3d"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map" data-aos="fade-left">
+                    <div class="map-wrapper-3d">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.4!2d-118.4!3d34.07!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzTCsDA0JzEyLjAiTiAxMTjCsDI0JzAwLjAiVw!5e0!3m2!1sen!2sus!4v1234567890" 
+                            width="100%" 
+                            height="400" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Bloom Salon Location">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-container">
+                <div class="footer-col footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span class="logo-icon">✿</span>
+                        <span class="logo-text">Bloom</span>
+                        <span class="logo-sub">salon</span>
+                    </a>
+                    <p>Where beauty blossoms into art. Premium salon experience in the heart of Beverly Hills.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Hair Styling</a></li>
+                        <li><a href="#services">Color & Highlights</a></li>
+                        <li><a href="#services">Skin & Spa</a></li>
+                        <li><a href="#services">Nail Art</a></li>
+                        <li><a href="#services">Bridal Package</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive offers, beauty tips, and updates.</p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="newsletter-input-wrapper">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-container">
+                <p>&copy; 2024 Bloom Salon. All rights reserved. Crafted with <span class="heart">♥</span> and <span class="script">love</span>.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <div class="toast-content">
+            <i class="fas fa-check-circle"></i>
+            <span id="toastMessage">Booking confirmed successfully!</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
